@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Atakan
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  Blauw
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  surface plane
  
 </details>
 
@@ -33,10 +33,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Je website
 
 <details open>
-  <summary>uitwerken voor kick-off werkgroep</summary>
+  <summary>footlocker</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  www.footlocker.nl
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
@@ -53,15 +53,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Toegankelijkheidstest 1/2 (week 1)
 
 <details>
-  <summary>uitwerken na test in 1e werkgroep</summary>
+  <summary>Tijdens de toegankelijkheidstest hebben we meerdere objecten gebruikt waarbij we simuleren hoe het is om een beperking te hebben, denk hierbij aan zicht, parkinsons/spasme en soorten blindheid</summary>
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  Blinden en of slechtzienden hebben verschillende soorten resultaten: je kan bijvoorbeeld alleen op een klein punt focussen en ziet verder niks meer om je heen dat     hetgeen wat voor je staat. Parkinson/spasmes spreekt voor zich, het is bijna fysiek onmogelijk om fatsoenlijk een website of app te kunnen gebruiken, je arm kan    w   weinig maar ook veel trillen waarbij het onmogelijk is om iets te doen 
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Een screenreader leest de HTML structuur zodat een blind of slechtziend persoon makkelijker gebruik kan maken van computers en smartphones.
+  eem screemreader kan irritaties wekken omdat alles word opgelezen met een monotome stem en je continu gebruik moet maken van de tab toets, het is maar de vraag of de website gebruiksvriendelijk is voor degene met een beperking.
 
 
   #### Muis en Toetsenbord 
@@ -71,15 +71,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Hier heb ik niet aan deelgenomen, echter wel geobserveerd. Voor de user is het onmogelijk om gebruik te maken van een telefoon op computer door de spasmes. veel kan je er niet aan doen, je kan users met parkinsons wel grotere buttons geven om een knop bijvoorbeeld makkelijker klikbaar te maken.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Visuele beperkingen verschillen de een ziet een klein punt en verder niet, de ander is natuurlijk kleurenblind en sommige hebben zelfs een soort vlek in hun zicht.
+  
+  hiervoor kan je verschillende oplossingen bedenken: denk aan grotere knoppen, een colorblind mode en grotere fonts
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 </details>
 
@@ -111,7 +110,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  overstappen van een all div naar sections en articles in combinatie met geen of weinig gebruik van classes en ids is een moeilijke overstap voor mij persoonlijk,
 
 
   ### Agenda voor meeting
