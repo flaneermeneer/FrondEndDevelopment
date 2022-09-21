@@ -1,0 +1,510 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+summary {
+  cursor: pointer;
+}
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+  /* startje */
+  --color-text: #111;
+  --color-background: #eee;
+  font-family: arial, sans-serif;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+header{
+  position: fixed;
+  left: 0;
+  right: 0;
+  display: flex;
+  padding: 0 2em;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+}
+
+header > a{
+  width: 5em;
+  height: 100%;
+}
+
+header > a img{
+  height: 100%;
+  width: auto;
+}
+
+nav {
+  color: #ffff;
+  height: 5em;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav button {
+  
+  padding:0em;
+  background-color: transparent;
+  /* icon en tekst met gap-je naast elkaar */
+  display:flex;
+  align-items:center;
+  gap:.25em;
+  
+  /* standaard styling aanpassen */
+  appearance:none;
+  border:none;
+  border-radius:.25em; 
+  font:inherit;
+  text-align:center;
+ 
+
+}
+
+nav img {
+  height: 1.5em;
+  margin-left: 2em;
+}
+
+
+nav button image {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+
+
+}
+
+nav button img:nth-of-type(1) {
+
+  padding-left: 1.25em;
+
+  width: 100%;
+
+
+}
+
+nav ul {
+
+  gap: 1em;
+  padding-right: 3.5em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  flex-direction: row;
+}
+
+nav li {
+  list-style: none;
+  padding-top: 1.75em;
+  font-weight: bold;
+
+
+}
+
+
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav > ul:nth-of-type(2) {
+ display: flex;
+}
+
+nav a:hover {
+  color: rgb(255, 0, 123);
+}
+
+@media (max-width:900px) {
+
+  nav > ul:first-of-type {
+    display: none;
+  }
+
+  nav.toon-menu ul{
+    display: block;
+    position: absolute;
+    top: 5em;
+    background-color: black;
+    right: 0;
+    left: 0;
+    padding: 0 2em 2em;
+    transition: 0.5s;
+  }
+
+}
+
+@media (min-width:901px) {
+
+  header{
+    justify-content: start;
+    gap: 5em;
+  }
+
+  nav > button {
+    display: none;
+  }
+
+}
+footer{
+  padding-top: 0.5em;
+  background-color: black;
+  padding-bottom: 1.5em;
+}
+footer h3{
+  color: white;
+}
+
+footer h3, ul{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+footer h3{
+  padding-top: .5em;
+}
+footer > section li {
+  list-style: none;
+
+}
+
+
+footer a {
+
+  display: flex;
+  justify-content: center;
+
+  color: white;
+  text-decoration: none;
+
+
+}
+footer a:hover {
+text-decoration: underline;
+
+}
+/*PAGE ONE !!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.home p:first-of-type {
+  padding-top: 2em;
+}
+
+main a {
+  color: black;
+  text-decoration: underline;
+
+
+}
+
+.home main :visited {
+  text-decoration: none;
+
+
+}
+
+.home main li {
+  list-style: none;
+}
+
+
+.home section {
+  margin: 0;
+  padding: 0;
+}
+
+.home section:nth-of-type(1) ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+}
+
+.home section:nth-of-type(1) li {
+
+  margin: 1em;
+  display: block;
+
+}
+
+/* Banner*/
+.home ul:nth-of-type(2) li:first-of-type {
+  /* jouw code hier */
+  /* de margin-right van het eerste kind wordt zo groot als de ruimte die over is */
+  /* daarmee worden de andere kinderen naar rechts 'geduwd' */
+  margin-right: auto;
+
+}
+
+.home ul:nth-of-type(2) li img {
+  /* jouw code hier */
+  margin-right: .125em;
+}
+
+.home section:nth-of-type(2) img {
+  width: 100%;
+
+}
+
+.home section:nth-of-type(2) picture {
+  width: 100%;
+}
+
+
+/*@media (min-width:900px) {
+  section:nth-of-type(2) img:first-of-type {
+   
+    
+  }
+  */
+.home section:nth-of-type(2) img:nth-of-type(2) {
+  display: block;
+}
+
+
+.home section:nth-of-type(2) a {
+  display: flex;
+  justify-content: center;
+  padding-top: .5em;
+
+}
+
+/* snelle merk selectie geeeezerrr*/
+/* snelle merk selectie geeeezerrr*/
+.home section:nth-of-type(3) ul {
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  display: grid;
+  width: 100%;
+}
+
+.home section:nth-of-type(3) li {
+  list-style: none;
+
+}
+
+.home section:nth-of-type(3) img {
+  list-style: none;
+  width: 100%;
+  height: auto;
+}
+
+.home section:nth-of-type(3) a {
+
+  display: flex;
+  justify-content: center;
+  padding-top: .5em;
+
+}
+
+@media (min-width:900px) {
+  .home section:nth-of-type(3) ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    display: grid;
+    width: 100%;
+  }
+
+  .home section:nth-of-type(3) li {
+    list-style: none;
+
+  }
+
+  .home section:nth-of-type(3) img {
+    list-style: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .home section:nth-of-type(3) a {
+
+    display: flex;
+    justify-content: center;
+    padding-top: .5em;
+
+  }
+}
+
+
+
+
+/*kleine blokjes merken*/
+.home section:nth-of-type(4) ul {
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  display: grid;
+  width: 100%;
+  padding-top: .5em;
+}
+
+.home section:nth-of-type(4) li {
+  list-style: none;
+
+}
+
+.home section:nth-of-type(4) img {
+  list-style: none;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width:900px) {
+  .home section:nth-of-type(4) ul {
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    gap: 1em;
+    display: grid;
+    width: 100%;
+    padding-top: .5em;
+  }
+
+  .home section:nth-of-type(4) li {
+    list-style: none;
+
+  }
+
+  .home section:nth-of-type(4) img {
+    list-style: none;
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+/*banner jordan*/
+.home section:nth-of-type(5) img {
+  width: 100%;
+  padding-top: .5em;
+
+}
+
+/*slipstreambanner*/
+.home section:nth-of-type(6) img {
+  width: 100%;
+  padding-top: .5em;
+
+}
+
+.home section:nth-of-type(6) a {
+  display: flex;
+  justify-content: center;
+  padding-top: .5em;
+}
+
+/*classicleather*/
+.home section:nth-of-type(7) img {
+  width: 100%;
+  padding-top: .5em;
+
+}
+
+.home section:nth-of-type(7) a {
+  display: flex;
+  justify-content: center;
+  padding-top: .5em;
+}
+
+@media (min-width:700px) {
+
+  .home section:nth-of-type(7) ul {
+
+    gap: 1em;
+    flex-direction: row;
+    display: flex;
+
+
+    width: 100%;
+    padding-top: .5em;
+  }
+
+  .home section:nth-of-type(7) ul li {
+    list-style: none;
+
+  }
+
+
+}
+
+
+.home section:nth-of-type(8) img,
+.home section:nth-of-type(9) img,
+.home section:nth-of-type(10) img,
+.home section:nth-of-type(11) img {
+  width: 100%;
+  padding-top: .5em;
+
+}
+
+.home section:nth-of-type(8) a,
+.home section:nth-of-type(9) a,
+.home section:nth-of-type(10) a,
+.home section:nth-of-type(11) a {
+  display: flex;
+  justify-content: center;
+  padding-top: .5em;
+}
+
+.home section:nth-of-type(10) h2 {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width:700px) {
+
+  .home section:nth-of-type(10) ul {
+
+    gap: 1em;
+    flex-direction: row;
+    display: flex;
+
+
+    width: 100%;
+    padding-top: .5em;
+  }
+
+  .home section:nth-of-type(10) ul li {
+    list-style: none;
+
+  }
+}
+
+
+
+
+
+/*PAGE 2!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
