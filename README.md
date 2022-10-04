@@ -40,7 +40,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/mobileFootlocker.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
@@ -88,13 +88,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/tekening_homepage.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/tekening_hamburgerMenu.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/tekening_responsive.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -108,15 +108,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  overstappen van een all div naar sections en articles in combinatie met geen of weinig gebruik van classes en ids is een moeilijke overstap voor mij persoonlijk, ook opletten op semantiek ervaar ik als lastig en zal hier verder naar vragen. Overigens zou ik meer willen weten over de responsiveness van een site.
+  overstappen van een all div naar sections en articles in combinatie met geen of weinig gebruik van classes en ids is een moeilijke overstap voor mij persoonlijk, ook   opletten op semantiek ervaar ik als lastig en zal hier verder naar vragen. Overigens zou ik meer willen weten over de responsiveness van een site.
 
 
   ### Agenda voor meeting
   Atakan Ekinci (niet alle groepleden waren aanwezig, daarom heb ik dit op eigen intiatief gedaan)
   VRAGEN:
-  -Pas ik de juiste semantiek toe? Zo nee wat doe ik verkeerd en wat kan beter.
-  -Hoe maak ik een website responive?
-  -hoe zorg ik ervoor dat een image veranderd op basis van van schermgrootte?
+  •Pas ik de juiste semantiek toe? Zo nee wat doe ik verkeerd en wat kan beter.
+  •Hoe maak ik een website responive?
+  •Hoe zorg ik ervoor dat een image veranderd op basis van van schermgrootte?
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
   
@@ -197,7 +197,7 @@ Eventuele oplossing: Als je geen interesse hebt in bepaalde elementen maar die g
   ### Agenda voor meeting
   samen met je groepje opstellen
   VRAGEN:
-  -Geen
+  •Geen
   
   bij het laatste gesprek was ik op gang en had verder geen vragen, de vragen die ik had heb ik gesteld in de les aan de student assistenten. De vraag ging               voornamelijk over hoe je dark en night mode kan toepassen op basis van je systeem voorkeur. ik wilde bij het voortgangs gesprek verder werken en als ik ergens         vastliep dan vragen te stellen.
   
@@ -219,43 +219,61 @@ Eventuele oplossing: Als je geen interesse hebt in bepaalde elementen maar die g
 
   ### Je uitkomst - karakteristiek screenshots:
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+   Korte omschrijving met plaatjes
+  •Mijzelf anders te laten denken dan alleen divjes, 
+  •Het toepasselijk gebruiken van classes,
+  •Knokken om te coderen, het gewoon doen en niet te zeuren.
+  •HEEL VEEL VREUGDE IN MOMENTEN ALS ALLES LUKTE!!!!!
+  ### Dit heb ik geleerd
+  •Media querys <img src="readme-images/media query.jpg" width="375px" alt="top">
+  •Picture element <img src="readme-images/picture-element.jpg" width="375px" >
+  •Dropdown menu  <img src="readme-images/dropdownopen.jpg" width="375px">
+  <img src="readme-images/dropdownclosed.jpg" width="375px" alt="top">
+  •Day & night mode <img src="readme-images/daynightmode_varcolor.jpg" width="375px">
+  •Var colors <img src="readme-images/daynightmode_varcolor.jpg" width="375px">
+  •Forms <img src="readme-images/form.jpg" width="375px" alt="top">
+  •Errors voorkomen dmv W3C validation in het programma
+  •NOG MEEER BUTTON STATES, GOOD STUFF!!!!
 
 
   ### Dit ging goed/Heb ik geleerd: 
   <!-- Wat ging er goed -->
   Korte omschrijving met plaatjes
-  -Mijzelf anders te laten denken dan alleen divjes 
-  -Het toepasselijk gebruiken van classes
-  -Knokken om te coderen, het gewoon doen en niet te zeuren.
-  -HEEL VEEL VREUGDE IN MOMENTEN ALS ALLES LUKTE!!!!!
+  •Mijzelf anders te laten denken dan alleen divjes, 
+  •Het toepasselijk gebruiken van classes,
+  •Knokken om te coderen, het gewoon doen en niet te zeuren.
+  •HEEL VEEL VREUGDE IN MOMENTEN ALS ALLES LUKTE!!!!!
+  <details>
+    
+     ### Dit heb ik geleerd
+    •Media querys 
+    <img src="readme-images/media query.jpg" width="375px" alt="top">
+    •Picture element<img src="readme-images/picture-element.jpg" width="375px" >
+    •Dropdown menu <img src="readme-images/dropdownopen.jpg" width="375px">
+      <img src="readme-images/dropdownclosed.jpg" width="375px" alt="top">
+    •Day & night mode <img src="readme-images/daynightmode_varcolor.png" width="375px">
+    •Var colors <img src="readme-images/daynightmode_varcolor.png" width="375px">
+    •Forms <img src="readme-images/form.png" width="375px" alt="top">
+    •Errors voorkomen dmv W3C validation in het programma
+    •NOG MEEER BUTTON STATES, GOOD STUFF!!!!
+    </details>
   
-    <!-- Wat heb ik geleerd -->
-    -Media querys
-    -Picture element
-    -Dropdown menu
-    -Day & night mode
-    -Var colors
-    -Forms
-    -Errors voorkomen dmv W3C validation in het programma
-    -NOG MEEER BUTTON STATES, GOOD STUFF!!!!
-  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
    <!-- Wat was lastig -->
-  -Het maken van de hamburger menu bleek lastiger dan ik dacht, en ben er nog steeds bang voor(java & css).
-  -Desondanks dat het gelukt is had ik aan het begin wel moeite met de media querys, door het vaker toe te passen begon ik het duidelijker te vinden.
-  -De footer van footlocker is nogal druk, het heeft meerdere buttons en kopjes. Dit wilde ik ook namaken maar door tijdsdruk heb ik ervoor gekozen om het simpel te      houden met de informatie die er in moet staan.
-  -Forms toepassen, in een form de button een link geven werkt heel anders dan bijvoorbeeld een list item in de nav, Ik ben wel blij dat het uiteindelijk is gelukt.
+    •	De footer van footlocker is nogal druk, het heeft meerdere buttons en kopjes. Dit wilde ik ook namaken maar door tijdsdruk heb ik ervoor gekozen om het simpel te houden met de informatie die er in moet staan.
+    •	Forms toepassen, in een form de button een link geven werkt heel anders dan bijvoorbeeld een list item in de nav, Ik ben wel blij dat het uiteindelijk is gelukt.
+    •	Het maken van de hamburger menu bleek lastiger dan ik dacht, en ben er nog steeds bang voor(java & css).
+    • Desondanks dat het gelukt is had ik aan het begin wel moeite met de media querys, door het vaker toe te passen begon ik het duidelijker te vinden.
+
   
-  -
    <!-- Wat was niet gelukt -->
-    -Searchbar, sommige onderdelen had ik onderschat vooralsnog wilde ik het proberen om bling bling en responsive te combineren
-    -Betere vormgeving, ik moet de situatie soms accepteren voor wat het is. Als iets goed genoeg is wil ik het alsnog verbeteren, dit werkt averechts.
-    -Meer gebruik van javascript, Het is iets waar ik alsnog lastig blijf vinden. Soms heb ik een gaaf idee en blijkt dat te complex te zijn voor mijn doen, daar maak      ik dan de keuze om dat te laten liggen omdat het te lang gaat duren en ga naar andere oplossingen/opties zoeken om een soortgelijk resultaat te behalen
-    -Skip to main content
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+    •Searchbar, sommige onderdelen had ik onderschat vooralsnog wilde ik het proberen om bling bling en responsive te combineren
+    •Betere vormgeving, ik moet de situatie soms accepteren voor wat het is. Als iets goed genoeg is wil ik het alsnog verbeteren, dit werkt averechts.
+    •Meer gebruik van javascript, Het is iets waar ik alsnog lastig blijf vinden. Soms heb ik een gaaf idee en blijkt dat te complex te zijn voor mijn doen, daar maak      ik dan de keuze om dat te laten liggen omdat het te lang gaat duren en ga naar andere oplossingen/opties zoeken om een soortgelijk resultaat te behalen
+    •Skip to main content
+  <img src="readme-images/form.jpg" width="375px" alt="bummer">
 </details>
 
 
