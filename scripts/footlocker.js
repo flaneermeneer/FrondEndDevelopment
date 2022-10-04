@@ -1,17 +1,12 @@
-/******************************/
-/* menu openen de MENU button */
-/******************************/
 
-/* JOUW CODE HIER - stap 4 */
-
-// stap 1: zoek de menu-button op en sla die op in een variabele
+// variabelen koppelen aan de classes
 var button = document.querySelector("nav > button")
 var nav = document.querySelector("nav")
 // audio variabelen
 var audioObj = new Audio('./audio/siu.mp3')
 var audiobutton = document.querySelector('.audiobutton')
-
-
+// variabelen van de vink image op de suprise page
+var vink = document.querySelector(".vinkje")
 // stap 2: laat de menu-button luisteren naar kliks en voer dan een functie uit
 button.addEventListener('click',toggleMenu);
 
@@ -22,12 +17,12 @@ function toggleMenu(){
   nav.classList.toggle("toon-menu")
 }
 
-
+// als er op de knop geklikt word, word de audio afgespeelt en word er een image vervangen!
 audiobutton.addEventListener('click', function() {
 
     audioObj.play();
     console.log("het werkt lan2");
-
+    vink.src = `images/lasereye.gif`
   })
 
 

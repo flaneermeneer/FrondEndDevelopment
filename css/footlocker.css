@@ -1,13 +1,9 @@
-/**************/
-/* CSS REMEDY */
-/**************/
 *,
 *::after,
 *::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 
 button,
@@ -15,62 +11,52 @@ summary {
   cursor: pointer;
 }
 
-
-
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
 :root {
-  /* startje */
+  /* colors in de main */
   --color-text: #111;
   --color-background: rgb(255, 255, 255);
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
+/* day/night mode */
 @media (prefers-color-scheme: dark) {
   :root {
     --color-text: #fff;
     --color-background: rgb(0, 0, 0);
-    font-family: arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 }
+
+/* Div in de main  */
 .spacing {
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
 
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
-/* focus visible heb ik hier zo gebruikt om elk klikbaar element in de site een rode border te geven met een vergroot effect als je erop */
-*:focus-visible{
-  transform:scale(110%);
+/* focus visible op alle interactieve elementen */
+*:focus-visible {
+  transform: scale(110%);
   transition: 0.3s;
-  border:solid 0.5em red;
-  
- 
+  border: solid 0.5em red;
+
+
 }
-/* variable gebruiken als kleuren als voorbereiding op dark en light mode wat je systeem instelling leest */
+
+/* body background color */
 body {
   color: var(--color-text);
   background-color: var(--color-background);
 }
 
-
+/* nav en header algemeen*/
 header {
 
   left: 0;
   right: 0;
   display: flex;
   padding: 0 2em;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   background-color: #000000;
 }
 
@@ -84,7 +70,7 @@ header>a img {
   width: auto;
 }
 
-/* navbar opmaak */
+/* navbar */
 nav {
   color: #ffff;
   height: 5em;
@@ -108,10 +94,6 @@ nav button {
   text-align: center;
 
 
-}
-nav button:hover{
-  transform:scale(110%);
-  transition: 0.3s;
 }
 
 nav img {
@@ -171,10 +153,13 @@ nav a:hover {
 
 }
 
+
+/* menu van de nav die veranderd op basis van schermgrootte */
 @media (max-width:900px) {
-  nav.toon-menu:focus{
+  nav.toon-menu:focus {
     display: none;
   }
+
   nav>ul:first-of-type {
 
     position: absolute;
@@ -186,10 +171,19 @@ nav a:hover {
     transform: translateY(0vh);
     transition: transform 0.5s ease-in-out;
     display: block;
- 
+
     /* 5 em waarde om boven de header te staan, 0vh als startwaarde  */
   }
-  
+
+  nav ul:focus-within {
+    transform: translateY(100vh);
+    top: calc(-100vh + 5em);
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+    padding: 0 2em 2em;
+    display: block;
+  }
+
   nav.toon-menu ul {
     transform: translateY(100vh);
     display: block;
@@ -200,174 +194,107 @@ nav a:hover {
   header {
     position: fixed;
   }
-  
-@media (min-width:901px) {
 
-  header {
-    justify-content: start;
-    gap: 5em;
-  }
+  @media (min-width:901px) {
 
-  nav>button {
-    display: none;
+    header {
+      justify-content: start;
+      gap: 5em;
+    }
+
+    nav>button {
+      display: none;
+    }
+
   }
 
 }
 
-  section:first-of-type li p:first-of-type,
-  section:first-of-type li p:nth-of-type(2) {
-    display: none;
-  }
 
-  section:first-of-type li p:last-of-type {
-    margin-top: 20em;
-  }
-}
+  @media (min-width:901px) {
 
-@media (min-width:901px) {
+    header {
+      justify-content: start;
+      gap: 5em;
+    }
 
-  header {
-    justify-content: start;
-    gap: 5em;
-  }
+    nav>button {
+      display: none;
+    }
 
-  nav>button {
-    display: none;
+
   }
 
 
-}
+  /*PAGE ONE !!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  /* algemeen main */
+  a:visited{
+    color: none;
+  }
 
-footer {
-  padding-top: 0.5em;
-  background-color: black;
-  padding-bottom: 1.5em;
-}
+  main a {
+    color: var(--color-text);
+    text-decoration: underline;
+  }
 
-footer h3 {
-  color: white;
-}
+  main a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+  }
 
-footer h3 {
-  padding-top: .5em;
-}
+  /* home class main */
+  .home main :visited {
+    text-decoration: none;
+  }
 
+  .home main li {
+    list-style: none;
+  }
 
+  .home section {
+    margin: 0;
+    padding: 0;
+  }
 
-footer li{
-  display: grid;
-  flex-direction: column;
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
-
-
-}
-
-footer a:hover {
-  text-decoration: underline;
-
-}
-
-footer section{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  gap: 2em;
-}
-
-@media (max-width:701px) {
-  
-
-  footer section {
+  /* section 1 */
+  .home section:nth-of-type(1) ul {
+    width: 100%;
     display: flex;
-    flex-direction: column;
- 
+    flex-wrap: wrap;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .home section:nth-of-type(1)>ul>li {
+    padding: 1em;
+    background-color: rgb(241, 241, 241);
+  }
+
+  .home section:nth-of-type(1) li {
+
+    margin: 1em;
+    display: block;
+
+  }
+
+  .home ul:nth-of-type(2) li img {
+    margin-right: .125em;
+  }
+
+  /* section 1  */
+  @media (max-width:900px) {
+    section:first-of-type li p:first-of-type,
+    section:first-of-type li p:nth-of-type(2) {
+      display: none;
+    }
   
+    section:first-of-type li p:last-of-type {
+      margin-top: 20em;
+    }
+  }
 
-}
-
-
-}
-
-
-footer button{
-  display: flex;
-  background-color: rgb(186, 0, 0);
-  color: white;
-  justify-content: center;
-  border-radius: 0.5em;
-  font-size: 1em;
-  padding: 1em 3em 1em 3em;
-}
-footer button:hover{
-  background-color: white;
-color: black;
-border-color:rgb(186, 0, 0)  ;
-}
-
-/*PAGE ONE !!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
-
-main a {
-  color: var(--color-text);
-  text-decoration: underline;
-
-
-
-}
-
-main a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 5px;
-}
-
-/* .home is de class die gebruikt word op de home page */
-.home main :visited {
-  text-decoration: none;
-
-
-}
-
-.home main li {
-  list-style: none;
-}
-
-
-.home section {
-  margin: 0;
-  padding: 0;
-}
-
-.home section:nth-of-type(1) ul {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-
-
-}
-.home section:nth-of-type(1) > ul >li {
-  background-color: rgb(241, 241, 241);
-  padding:1em;
-}
-.home section:nth-of-type(1) li {
-
-  margin: 1em;
-  display: block;
-
-}
-
-
-.home ul:nth-of-type(2) li img {
-  /* jouw code hier */
-  margin-right: .125em;
-}
-
+/* section 2 */
 .home section:nth-of-type(2) img {
   width: 100%;
 }
@@ -382,29 +309,29 @@ main a:hover {
 
 .home section:nth-of-type(2) a {
   display: flex;
+  margin-top: .5em;
   justify-content: center;
-  padding-top: .5em;
+
 }
-/* die eerste image word goed weergegeven tot de top op de mobile versie omdat de onrelevante info verdwijnt bleef er eest teveel witruimte over*/
+
+/* section 2 media query*/
 @media (max-width:901px) {
-
-
   .home section:nth-of-type(2) img {
     width: 100%;
     margin-top: 2em;
   }
 }
 
-/* snelle merk selectie geeeezerrr*/
-/* snelle merk selectie geeeezerrr*/
+/* section 3*/
 .home section:nth-of-type(3) {
- padding-top: 1em;
+  margin-top: 1em;
 }
+
 .home section:nth-of-type(3) ul {
-  grid-template-columns: 1fr 1fr;
   gap: 1em;
-  display: grid;
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .home section:nth-of-type(3) li {
@@ -413,9 +340,10 @@ main a:hover {
 }
 
 .home section:nth-of-type(3) img {
-  list-style: none;
+
   width: 100%;
   height: auto;
+  list-style: none;
 }
 
 .home section:nth-of-type(3) a {
@@ -425,17 +353,18 @@ main a:hover {
 
 }
 
+/* section 3 media query*/
 @media (min-width:900px) {
   .home section:nth-of-type(3) ul {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  
     gap: 1em;
-    display: grid;
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .home section:nth-of-type(3) li {
     list-style: none;
-
   }
 
   .home section:nth-of-type(3) img {
@@ -448,18 +377,16 @@ main a:hover {
 
     display: flex;
     justify-content: center;
-    padding-top: .5em;
-
   }
 }
 
-/*kleine blokjes merken*/
+/*section 4 */
 .home section:nth-of-type(4) ul {
-  grid-template-columns: 1fr 1fr;
   gap: 1em;
-  display: grid;
   width: 100%;
+  display: grid;
   padding-top: .5em;
+  grid-template-columns: 1fr 1fr;
 }
 
 .home section:nth-of-type(4) li {
@@ -468,11 +395,13 @@ main a:hover {
 }
 
 .home section:nth-of-type(4) img {
-  list-style: none;
+
   width: 100%;
   height: auto;
+  list-style: none;
 }
 
+/* section 4 media query */
 @media (min-width:900px) {
   .home section:nth-of-type(4) ul {
     grid-template-columns: 15% 15% 15% 15% 15% 15%;
@@ -495,14 +424,14 @@ main a:hover {
   }
 }
 
-/*banner jordan*/
+/* section 5*/
 .home section:nth-of-type(5) img {
   width: 100%;
   margin-top: .5em;
 
 }
 
-/*slipstreambanner*/
+/*section 6*/
 .home section:nth-of-type(6) img {
   width: 100%;
   margin-top: .5em;
@@ -511,11 +440,12 @@ main a:hover {
 
 .home section:nth-of-type(6) a {
   display: flex;
-  justify-content: center;
   margin-top: .5em;
+  justify-content: center;
+
 }
 
-/*classicleather*/
+/*section 7*/
 .home section:nth-of-type(7) img {
   width: 100%;
   margin-top: .5em;
@@ -524,19 +454,19 @@ main a:hover {
 
 .home section:nth-of-type(7) a {
   display: flex;
-  justify-content: center;
   margin-top: .5em;
+  justify-content: center;
 }
-/* de 7e section die veranderd van display en gaat naast elkaar staan dat als het normaal staat */
+
+/* section 7 media query */
 @media (min-width:700px) {
 
   .home section:nth-of-type(7) ul {
-
     gap: 1em;
-    flex-direction: row;
-    display: flex;
     width: 100%;
+    display: flex;
     margin-top: .5em;
+    flex-direction: row;
   }
 
   .home section:nth-of-type(7) ul li {
@@ -545,7 +475,8 @@ main a:hover {
   }
 
 }
-/* images van section 8 tot en met 10 krijgen hier dezelfde waarde door een opsomming*/
+
+/* section 8 tot en met 11 img*/
 .home section:nth-of-type(8) img,
 .home section:nth-of-type(9) img,
 .home section:nth-of-type(10) img,
@@ -554,30 +485,33 @@ main a:hover {
   margin-top: .5em;
 
 }
-/* a tjes van section 8 tot en met 10 krijgen hier dezelfde waarde door een opsomming, ze krijgen een display flex*/
+
+/* section 8/11 a*/
 .home section:nth-of-type(8) a,
 .home section:nth-of-type(9) a,
 .home section:nth-of-type(10) a,
 .home section:nth-of-type(11) a {
   display: flex;
-  justify-content: center;
   padding-top: .5em;
+  justify-content: center;
 }
 
+/* section 10 h3*/
 .home section:nth-of-type(10) h2 {
   display: flex;
   justify-content: center;
 }
 
+/* media query section 10 */
 @media (min-width:700px) {
 
   .home section:nth-of-type(10) ul {
 
     gap: 1em;
-    flex-direction: row;
-    display: flex;
     width: 100%;
+    display: flex;
     padding-top: .5em;
+    flex-direction: row;
   }
 
   .home section:nth-of-type(10) ul li {
@@ -591,38 +525,22 @@ main a:hover {
 
 
 /*PAGE 2!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
-.overons h3:first-of-type {
+/* over ons algemeen styling */
+.overons h2:first-of-type {
+  font-size: 1.75em;
   padding-top: 0.5em;
   padding-left: 0.5em;
-  font-size: 1.75em;
 }
 
 .overons img {
   width: 100%;
 
 }
-/* het fine tunen van de image omdat de mobile menu fixed is maar de desktop versie niet*/
-@media (min-width:900px) {
-
-  .overons img {
-    width: 100%;
-    padding-top: 0em;
-
-  }
-}
-@media (max-width:899px) {
-
-  .overons img {
-    width: 100%;
-    padding-top: 5em;
-
-  }
-}
 
 .overons section {
   display: flex;
 }
+
 .overons p {
   padding: 1em;
 }
@@ -635,7 +553,27 @@ main a:hover {
   padding-bottom: 2em;
 
 }
-/* de over ons pagina gaat dmv een media query schalen tussen column en het standaard display flex */
+
+/* over ons media query */
+@media (min-width:900px) {
+
+  .overons img {
+    width: 100%;
+    padding-top: 0em;
+
+  }
+}
+
+@media (max-width:899px) {
+
+  .overons img {
+    width: 100%;
+    padding-top: 5em;
+
+  }
+}
+
+/* media query section 1 over ons */
 @media (min-width:700px) {
 
   .overons section:nth-of-type(1) {
@@ -654,90 +592,186 @@ main a:hover {
 
 }
 
-
-/* Opmaak van de forms  op pagina 2 aka de over ons page*/
-.overons section:nth-of-type(2) h3{
+/* section 2 over ons page*/
+.overons section:nth-of-type(2) h2 {
   display: flex;
-justify-content: center;
+  justify-content: center;
 }
-.overons form label{
+
+.overons form label {
   padding: 0.5em;
 }
-/* indeling van de inhoud van de form, onderelkaar*/
+
+
 .overons section:nth-of-type(2) form {
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 
 }
+
 /* de form word  vormgegeven */
 .overons form {
-
   width: 100%;
-  background-color:var(--color-background);
-  display: inline-block;
-    justify-content: center;
+  margin: 1em;
   align-items: center;
   border-radius: 20px;
-  padding-left: 2em 2em 0em;
-  margin:1em;
-
+  display: inline-block;
+  justify-content: center;
+  padding: 2em 2em 0em;
+  background-color: var(--color-background);
 }
+
 /* de input fields in de form krijgen eeen kleur, indeling, border raduis een padding  */
-.overons form input{
+.overons form input {
   width: 50%;
   display: flex;
-  border: 2px solid #d1d6dc;
-  background-color: #fff;
   color: #000;
-  border-radius: 3px;
-  padding-bottom: 2em; 
-  font-size:1em;
-}
-/* met de placeholder zorg ik ervoor dat de kleur van de tekst hotpink is als er nog niks in ingetypt en de placeholder tekst actief is */
-.overons form input::placeholder{
-  color:rgb(186, 0, 0);
-}
-/* de button die word vormgegeven */
-.overons form button{
-  display: flex;
-  background-color: rgb(186, 0, 0) ;
-  color: white;
-  justify-content: center;
-  border-radius: 0.5em;
   font-size: 1em;
+  border-radius: 3px;
+  padding-bottom: 2em;
+  background-color: #fff;
+  border: 2px solid #d1d6dc;
+}
+
+/* met de placeholder zorg ik ervoor dat de kleur van de tekst hotpink is als er nog niks in ingetypt en de placeholder tekst actief is */
+.overons form input::placeholder {
+  color: rgb(186, 0, 0);
+}
+
+/* over ons button styling */
+.overons form button {
+  display: flex;
+  margin-top: 1em;
+  color: white;
+  font-size: 1em;
+  border-radius: 0.5em;
+  justify-content: center;
   padding: 1em 4em 1em 4em;
+  background-color: rgb(186, 0, 0);
   /* ik gebruik de margin om de button van de input field af te duwen met 1em */
-  margin-top: 1em
+
 }
-/* ik geef de hover state een een andere kleur */
-.overons form button:hover{
-background-color: white;
-color: black;
-border-color:rgb(186, 0, 0)  ;
+
+
+/* form button styling over ons page */
+.overons form button:hover {
+  color: black;
+  background-color: white;
+  border-color: rgb(186, 0, 0);
 }
-/* ik geef de active state een een andere kleur */
-.overons form button:active{
-  transform: rotate(180deg);
+
+
+
+.overons form button:active {
+  transform: skew(30deg);
   transition: transform 0.3s;
 }
-.overons section:first-of-type > article:last-of-type > p:nth-of-type(1){
+
+.overons section:first-of-type>article:last-of-type>p:nth-of-type(1) {
   font-weight: 600;
 
 }
-.overons select{
-  display: flex;
-  justify-content: end;
-  padding: 1em;
-  margin: 1em;
-}
-section:last-of-type > form > input  {
+
+section:last-of-type>form>input {
+  width: 60%;
   padding: 1em;
   text-align: center;
- 
+
+}
+.overons>section> form>input:focus {
+
+  border: solid 0.5em red;
+}
+
+/* succes page */
+.succes main{
+  width: 100%;
+}
+.succes section img{
+  display: flex;
+  width: 30%;
+ margin: auto;
+ padding-top: 6em;
+}
+.succes section p{
+  display: flex;
+  justify-content: center;
+  margin:2em;
+}
+
+.succes section button{
+
+  margin: auto;
+  display: flex;
+  font-size: 1em;
+  margin-bottom: 11em;
+  border-radius: 0.5em;
+  padding: 1em 4em 1em 4em;
+  color:white;
+  background-color: rgb(186, 0, 0);
+}
+
+.succes button:hover {
+  color: black;
+  background-color: white;
+  border-color: rgb(186, 0, 0);
+}
+
+.succes button:active {
+  transform: skew(30deg);
+  transition: transform 0.3s;
+}
+
+/* footer */
+footer {
+  padding-top: 0.5em;
+  padding-bottom: 1.5em;
+  background-color: black;
+}
+
+footer h2 {
+  color: white;
+  font-size: 1em;
+}
+
+footer h2 {
+  padding-top: .5em;
+}
+
+
+footer li {
+  display: grid;
+  flex-direction: column;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+
+}
+
+footer a:hover {
+  text-decoration: underline;
+
+}
+
+footer section {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
 
 }
 
 
+@media (max-width:701px) {
 
+
+  footer section {
+  gap: 1em;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  }
+}
