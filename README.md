@@ -39,11 +39,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   www.footlocker.nl
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Home
   <img src="readme-images/mobileFootlocker.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Over ons 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
@@ -224,17 +224,6 @@ Eventuele oplossing: Als je geen interesse hebt in bepaalde elementen maar die g
   •Het toepasselijk gebruiken van classes,
   •Knokken om te coderen, het gewoon doen en niet te zeuren.
   •HEEL VEEL VREUGDE IN MOMENTEN ALS ALLES LUKTE!!!!!
-  ### Dit heb ik geleerd
-  •Media querys <img src="readme-images/media query.jpg" width="375px" alt="top">
-  •Picture element <img src="readme-images/picture-element.jpg" width="375px" >
-  •Dropdown menu  <img src="readme-images/dropdownopen.jpg" width="375px">
-  <img src="readme-images/dropdownclosed.jpg" width="375px" alt="top">
-  •Day & night mode <img src="readme-images/daynightmode_varcolor.jpg" width="375px">
-  •Var colors <img src="readme-images/daynightmode_varcolor.jpg" width="375px">
-  •Forms <img src="readme-images/form.jpg" width="375px" alt="top">
-  •Errors voorkomen dmv W3C validation in het programma
-  •NOG MEEER BUTTON STATES, GOOD STUFF!!!!
-
 
   ### Dit ging goed/Heb ik geleerd: 
   <!-- Wat ging er goed -->
@@ -248,12 +237,12 @@ Eventuele oplossing: Als je geen interesse hebt in bepaalde elementen maar die g
      ### Dit heb ik geleerd
     •Media querys 
     <img src="readme-images/media query.jpg" width="375px" alt="top">
-    •Picture element<img src="readme-images/picture-element.jpg" width="375px" >
-    •Dropdown menu <img src="readme-images/dropdownopen.jpg" width="375px">
-      <img src="readme-images/dropdownclosed.jpg" width="375px" alt="top">
-    •Day & night mode <img src="readme-images/daynightmode_varcolor.png" width="375px">
-    •Var colors <img src="readme-images/daynightmode_varcolor.png" width="375px">
-    •Forms <img src="readme-images/form.png" width="375px" alt="top">
+    •Picture element<img src="readme-images/picture-element.JPG" >
+    •Dropdown menu <img src="readme-images/dropdownopen.JPG" >
+      <img src="readme-images/dropdownclosed.JPG" alt="top">
+    •Day & night mode <img src="readme-images/daynightmode_varcolor.JPG" width="375px">
+    •Var colors <img src="readme-images/daynightmode_varcolor.JPG" width="375px">
+    •Forms <img src="readme-images/form.JPG" width="375px" alt="top">
     •Errors voorkomen dmv W3C validation in het programma
     •NOG MEEER BUTTON STATES, GOOD STUFF!!!!
     </details>
