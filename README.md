@@ -44,7 +44,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Over ons 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/overons_page_mobile_footlocker.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -70,7 +70,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier heb ik niet aan deelgenomen, echter wel geobserveerd. Voor de user is het onmogelijk om gebruik te maken van een telefoon op computer door de spasmes. veel kan je er niet aan doen, je kan users met parkinsons wel grotere buttons geven om een knop bijvoorbeeld makkelijker klikbaar te maken of goed gebruik maken van tabs en de states daarvan.
+   Na mijn observatie bleek het voor de user is het onmogelijk om gebruik te maken van een telefoon op computer door de spasmes. veel kan je er niet aan doen, je kan users met parkinsons wel grotere buttons geven om een knop bijvoorbeeld makkelijker klikbaar te maken of goed gebruik maken van tabs en de states daarvan.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
@@ -89,13 +89,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### de hele pagina: 
   <img src="readme-images/tekening_homepage.jpg" width="375px" alt="breakdown van de hele pagina">
-
+  
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/tekening_hamburgerMenu.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/tekening_responsive.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
+  
+in de schets voor het responsive element heb ik geprobeert om te snappen wat het allemaal inhoudt, namelijk dat als je responsive wilt zijn dat je gebruik moet maken van media querys en verschillende CSS properties! Mijn verwachtingen zijn dat ik moeite ga krijgen met de hamburger menu, de css en javascript moeten goed op elkaar afgestemd worden en de hamburger menu zou ook moeten verdwijnen na mate het scherm groter wordt.
 </details>
 
 
@@ -137,12 +138,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Ik ben lekker bezig naar mijn zeggen en kreeg dat ook te horen van Vasilis, dit gaf mij extra motivatie om door te knallen.
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+  Ik heb op eigen initiatief mijn punten voorbereid.
   
-  Voor het voortgangsgesprek van week 2 had ik verder geen vragen waarbij ik ergens vastliep, Mijn doel was om met Vasilis de code door te lopen en de website te checken op de functionaliteiten en responsiveness. Hier kreeg ik te horen dat ik goed bezig was, er verder geen commentaar was en dat ik zo lekker door moest blijven gaan.
+  Voor het voortgangsgesprek van week 2 had ik een aantal vragen over de text decoration underline en de thickness ervan, verder was het mijn doel om met Vasilis de code door te lopen en de website te checken op de functionaliteiten en responsiveness. Hier kreeg ik te horen dat ik goed bezig was, er verder geen commentaar was en dat ik zo lekker door moest blijven gaan.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -167,6 +168,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   De sreenreader functie doet het op de website van footlocker naar behoren, je krijgt te horen op welk bepaalt punt je heen gaat veel alternatieve teksten zodat niet denkt "waar ben ik nou". Dit heb ik ook aangehouden in mijn site en functioneert net als op de website van footlocker. Echter word er op de site van footlocker te veel gebruik gemaakt van divjes, dit kan ervoor zorgen dat er op onlogische wijze doorheen word gelezen!
 Eventuele oplossing: Als je geen interesse hebt in bepaalde elementen maar die gedwongen toch moet doorgaan kan je eventueel ervoor zorgen dat onrelevante of de minstbelangrijke onderdelen overgeslagen worden.
 
+  dit ga ik meenemen:
+  - een website met de juiste semantische waarden, denk aan het goed toepassen van sections en articles en het goed gebruik van h1/h2/h3 en dat verduidelijkend commentaar(dit voornamelijk vanwege de screenreaders deze kan dat correct lezen in tegenstelling tot divjes.
+  - meer nadruk leggen op tab functie(extra dikke border op hetgeen wat je tabt) dmv css
+  - door de navigatie balk kunnen tabben op desktop mode
+ 
 
   #### Muis en Toetsenbord 
   Het gebruik van de muis en toetsenbord per beperking verschilt enorm, als je slechtziend bent of kleurenblind kan je bijvoorbeeld nog een formulier invullen of         navigeren door de site. Met een motorieke beperking bleef dit wel lastig. Ik heb mij ook voorgenomen om meer nadruk te leggen op het tabben door mijn site heen zodat   de gebruiker in iedergeval duidelijk kan zien waar hij/zij is.
@@ -197,14 +203,15 @@ Eventuele oplossing: Als je geen interesse hebt in bepaalde elementen maar die g
   ### Agenda voor meeting
   samen met je groepje opstellen
   VRAGEN:
-  •Geen
+  - footer
+  - verbetering navbar hamburger menu
   
-  bij het laatste gesprek was ik op gang en had verder geen vragen, de vragen die ik had heb ik gesteld in de les aan de student assistenten. De vraag ging               voornamelijk over hoe je dark en night mode kan toepassen op basis van je systeem voorkeur. ik wilde bij het voortgangs gesprek verder werken en als ik ergens         vastliep dan vragen te stellen.
-  
+  De vragen die ik had, heb ik zelf kunnen oplossen door even weer flexbox froggy te gaan doen omdat ik vastliep bij het maken van de footer.
+  https://flexboxfroggy.com/#nl
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
   
-  Ik heb verder gewerkt aan bepaalde states om nadruk te leggen op users die gebruik maken van tab en afhankelijk zijn van button states.
+  Ik heb verder gewerkt aan bepaalde states om nadruk te leggen op users die gebruik maken van tab en afhankelijk zijn van button states en ben verder gaan werken richting het eindresultaat.
 
 </details>
 
@@ -218,51 +225,49 @@ Eventuele oplossing: Als je geen interesse hebt in bepaalde elementen maar die g
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-   Korte omschrijving met plaatjes
-  •Mijzelf anders te laten denken dan alleen divjes, 
-  •Het toepasselijk gebruiken van classes,
-  •Knokken om te coderen, het gewoon doen en niet te zeuren.
-  •HEEL VEEL VREUGDE IN MOMENTEN ALS ALLES LUKTE!!!!!
+  Dit heb geleerd:
+  - picture element
+  - dropdownmenu open 
+  - dropdownmenu sluit
+  - media query
+  - day en night mode
+  - Errors voorkomen dmv W3C validation in het programma
+  - NOG MEEER BUTTON STATES, GOOD STUFF!!!!
+  <img src="readme-images/picture-element.JPG" width="375px" alt="uitomst opdracht 1">
+  
+   <img src="/readme-images/dropdownopen.JPG" >
+
+   <img src="/readme-images/dropdownclosed.JPG" alt="top">
+
+  <img src="readme-images/daynightmode_varcolor.JPG" width="375px">
+
+   <img src="readme-images/media_query.JPG" width="375px" alt="top">
+
+     
 
   ### Dit ging goed/Heb ik geleerd: 
-  <!-- Wat ging er goed -->
-  Korte omschrijving met plaatjes
-  •Mijzelf anders te laten denken dan alleen divjes, 
-  •Het toepasselijk gebruiken van classes,
-  •Knokken om te coderen, het gewoon doen en niet te zeuren.
-  •HEEL VEEL VREUGDE IN MOMENTEN ALS ALLES LUKTE!!!!!
-  <details>
-    
-     ### Dit heb ik geleerd
-    •Media querys 
-    <img src="readme-images/media query.jpg" width="375px" alt="top">
-    •Picture element<img src="readme-images/picture-element.JPG" >
-    •Dropdown menu <img src="readme-images/dropdownopen.JPG" >
-      <img src="readme-images/dropdownclosed.JPG" alt="top">
-    •Day & night mode <img src="readme-images/daynightmode_varcolor.JPG" width="375px">
-    •Var colors <img src="readme-images/daynightmode_varcolor.JPG" width="375px">
-    •Forms <img src="readme-images/form.JPG" width="375px" alt="top">
-    •Errors voorkomen dmv W3C validation in het programma
-    •NOG MEEER BUTTON STATES, GOOD STUFF!!!!
-    </details>
-  
 
+  Korte omschrijving met plaatjes
+  - Mijzelf anders te laten denken dan alleen divjes, 
+  - Het toepasselijk gebruiken van classes,
+  - Knokken om te coderen, het gewoon doen en niet te zeuren.
+  - HEEL VEEL VREUGDE IN MOMENTEN ALS ALLES LUKTE!!!!!
 
   ### Dit was lastig/Is niet gelukt:
    <!-- Wat was lastig -->
-    •	De footer van footlocker is nogal druk, het heeft meerdere buttons en kopjes. Dit wilde ik ook namaken maar door tijdsdruk heb ik ervoor gekozen om het simpel te houden met de informatie die er in moet staan.
-    •	Forms toepassen, in een form de button een link geven werkt heel anders dan bijvoorbeeld een list item in de nav, Ik ben wel blij dat het uiteindelijk is gelukt.
-    •	Het maken van de hamburger menu bleek lastiger dan ik dacht, en ben er nog steeds bang voor(java & css).
-    • Desondanks dat het gelukt is had ik aan het begin wel moeite met de media querys, door het vaker toe te passen begon ik het duidelijker te vinden.
+    - De footer van footlocker is nogal druk, het heeft meerdere buttons en kopjes. Dit wilde ik ook namaken maar door tijdsdruk heb ik ervoor gekozen om het simpel te houden met de informatie die er in moet staan.
+    - Forms toepassen, in een form de button een link geven werkt heel anders dan bijvoorbeeld een list item in de nav, Ik ben wel blij dat het uiteindelijk is gelukt.
+    - Het maken van de hamburger menu bleek lastiger dan ik dacht, en ben er nog steeds bang voor(java & css).
+    - Desondanks dat het gelukt is had ik aan het begin wel moeite met de media querys, door het vaker toe te passen begon ik het duidelijker te vinden.
 
   
    <!-- Wat was niet gelukt -->
-    •Searchbar, sommige onderdelen had ik onderschat vooralsnog wilde ik het proberen om bling bling en responsive te combineren
-    •Betere vormgeving, ik moet de situatie soms accepteren voor wat het is. Als iets goed genoeg is wil ik het alsnog verbeteren, dit werkt averechts.
-    •Meer gebruik van javascript, Het is iets waar ik alsnog lastig blijf vinden. Soms heb ik een gaaf idee en blijkt dat te complex te zijn voor mijn doen, daar maak      ik dan de keuze om dat te laten liggen omdat het te lang gaat duren en ga naar andere oplossingen/opties zoeken om een soortgelijk resultaat te behalen
-    •Skip to main content
+    - Searchbar, sommige onderdelen had ik onderschat vooralsnog wilde ik het proberen om bling bling en responsive te combineren
+    - Betere vormgeving, ik moet de situatie soms accepteren voor wat het is. Als iets goed genoeg is wil ik het alsnog verbeteren, dit werkt averechts.
+    - Meer gebruik van javascript, Het is iets waar ik alsnog lastig blijf vinden. Soms heb ik een gaaf idee en blijkt dat te complex te zijn voor mijn doen, daar maak      ik dan de keuze om dat te laten liggen omdat het te lang gaat duren en ga naar andere oplossingen/opties zoeken om een soortgelijk resultaat te behalen
+    - Skip to main content
   <img src="readme-images/form.jpg" width="375px" alt="bummer">
+    
 </details>
 
 
@@ -273,12 +278,12 @@ Eventuele oplossing: Als je geen interesse hebt in bepaalde elementen maar die g
 
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
-      Voor alle fotos: https://www.footlocker.nl/
-      Groene vink op de verassings page: https://commons.wikimedia.org/wiki/File:Eo_circle_green_checkmark.svg
-      Day/night mode: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme (met hulp van de student assistent)
-      Form > button linken: https://www.w3docs.com/snippets/html/how-to-create-an-html-button-that-acts-like-a-link.html
-      Media query: https://www.w3schools.com/css/css_rwd_mediaqueries.asp (met hulp van de student assistent)
-      flexbox froggy: https://flexboxfroggy.com/#nl (om flexbox beter te kunnen snappen)
-      Animatie https://www.w3schools.com/css/css3_2dtransforms.asp (denk bijvoorbeeld aan skewY en TransformY)
-      Opdrachten die op DLO stonden met informeren over vormgeving binnen css: https://dlo.mijnhva.nl/d2l/le/content/437097/Home
+      - Voor alle fotos, alle fotos & tekst heb ik van footlocker zelf: https://www.footlocker.nl/
+      - Groene vink op de verassings page, op de verassings pagina kom je een groen vinkje tegemoet: https://commons.wikimedia.org/wiki/File:Eo_circle_green_checkmark.svg
+      - Day/night mode( day en night mode was iets waar ik helemaal geen kennis van had, daarom had ik samen met de student assistent gegoogled naar hoe het in elkaar zat. Dit bleek makkelijker dan gedacht omdat het uit een paar regels css bestaat: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme (met hulp van de student assistent)
+      - Form > button linken, Bij het linken van een button binnen een form ging het aardig mis, daarom had ik dat opgezocht en bleek heel erg makkelijk te zijn: https://www.w3docs.com/snippets/html/how-to-create-an-html-button-that-acts-like-a-link.html
+      - Media query, Voor het responsive maken van een site kan je gebruik maken van Media querys hierin kan je een waarde aanpassen op basis van scherm grootte: https://www.w3schools.com/css/css_rwd_mediaqueries.asp (met hulp van de student assistent)
+      - flexbox froggy, flexbox froggy heeft mij geholpen om flex elementen beter te begrijpen: https://flexboxfroggy.com/#nl (om flexbox beter te kunnen snappen)
+      - Animatie, Hoe laat je een image bewegen of van vorm veranderen door dat te animeren en dat deed ik via https://www.w3schools.com/css/css3_2dtransforms.asp (denk bijvoorbeeld aan skewY en TransformY)
+      - Opdrachten die op DLO stonden met informeren over vormgeving binnen css, De opdrachten van Sanne hielpen mij wel om ergens een basis van te snappen: https://dlo.mijnhva.nl/d2l/le/content/437097/Home
 </details>
