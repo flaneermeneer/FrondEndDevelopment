@@ -4,9 +4,9 @@ var button = document.querySelector("nav > button")
 var nav = document.querySelector("nav")
 // audio variabelen
 var audioObj = new Audio('./audio/siu.mp3')
-var audiobutton = document.querySelector('.audiobutton')
+var audiobutton = document.querySelector(".succes > section > button")
 // variabelen van de vink image op de suprise page
-var vink = document.querySelector(".vinkje")
+var vink = document.querySelector(".succes > section > img")
 // stap 2: laat de menu-button luisteren naar kliks en voer dan een functie uit
 button.addEventListener('click',toggleMenu);
 

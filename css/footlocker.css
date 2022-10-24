@@ -35,9 +35,10 @@ summary {
 
 /* focus visible op alle interactieve elementen */
 *:focus-visible {
-  transform: scale(110%);
+  transform: scale(105%);
   transition: 0.3s;
-  border: solid 0.5em red;
+  border: red solid;
+  box-shadow:  5px;
 
 
 }
@@ -95,10 +96,13 @@ nav button {
 
 
 }
-
+header > h1 > a >img:first-of-type{
+  width: 150px;
+}
 nav img {
-  height: 1.5em;
+  height: 2em;
   margin-left: 2em;
+
 }
 
 
@@ -229,7 +233,7 @@ nav a:hover {
   /*PAGE ONE !!!!!!!!!!!!!!!!!!!!!!!!!!*/
   /* algemeen main */
   a:visited{
-    color: none;
+    text-decoration: none;
   }
 
   main a {
@@ -243,6 +247,10 @@ nav a:hover {
   }
 
   /* home class main */
+  .home h2{
+    display: flex;
+    justify-content: center;
+  }
   .home main :visited {
     text-decoration: none;
   }
@@ -251,12 +259,18 @@ nav a:hover {
     list-style: none;
   }
 
-  .home section {
-    margin: 0;
+  .home section:first-of-type {
+    margin-top: 0 ;
     padding: 0;
   }
 
   /* section 1 */
+  .home section:nth-of-type(2){
+  margin-top: 1em;
+  }
+   .home h2{
+    margin: 1em 0em 0em 0em;
+  }
   .home section:nth-of-type(1) ul {
     width: 100%;
     display: flex;
@@ -268,7 +282,8 @@ nav a:hover {
 
   .home section:nth-of-type(1)>ul>li {
     padding: 1em;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(148, 148, 148);
+    color: var(--color-text);
   }
 
   .home section:nth-of-type(1) li {
@@ -284,13 +299,15 @@ nav a:hover {
 
   /* section 1  */
   @media (max-width:900px) {
-    section:first-of-type li p:first-of-type,
-    section:first-of-type li p:nth-of-type(2) {
+    section:first-of-type li p {
       display: none;
     }
   
     section:first-of-type li p:last-of-type {
       margin-top: 20em;
+    }
+    .home h2:first-of-type{
+      margin:0em
     }
   }
 
@@ -314,17 +331,28 @@ nav a:hover {
 
 }
 
+
+.home section:nth-of-type(2) a:first-of-type{
+  display: flex;
+  margin-top: 0em;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
 /* section 2 media query*/
 @media (max-width:901px) {
   .home section:nth-of-type(2) img {
     width: 100%;
-    margin-top: 2em;
+
   }
 }
 
 /* section 3*/
-.home section:nth-of-type(3) {
+
+.home section {
   margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .home section:nth-of-type(3) ul {
@@ -377,6 +405,8 @@ nav a:hover {
 
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -427,14 +457,14 @@ nav a:hover {
 /* section 5*/
 .home section:nth-of-type(5) img {
   width: 100%;
-  margin-top: .5em;
+
 
 }
 
 /*section 6*/
 .home section:nth-of-type(6) img {
   width: 100%;
-  margin-top: .5em;
+
 
 }
 
@@ -448,13 +478,13 @@ nav a:hover {
 /*section 7*/
 .home section:nth-of-type(7) img {
   width: 100%;
-  margin-top: .5em;
+ 
 
 }
 
 .home section:nth-of-type(7) a {
   display: flex;
-  margin-top: .5em;
+
   justify-content: center;
 }
 
@@ -465,7 +495,7 @@ nav a:hover {
     gap: 1em;
     width: 100%;
     display: flex;
-    margin-top: .5em;
+ 
     flex-direction: row;
   }
 
@@ -482,7 +512,7 @@ nav a:hover {
 .home section:nth-of-type(10) img,
 .home section:nth-of-type(11) img {
   width: 100%;
-  margin-top: .5em;
+
 
 }
 
@@ -492,12 +522,12 @@ nav a:hover {
 .home section:nth-of-type(10) a,
 .home section:nth-of-type(11) a {
   display: flex;
-  padding-top: .5em;
+
   justify-content: center;
 }
 
 /* section 10 h3*/
-.home section:nth-of-type(10) h2 {
+.home section:nth-of-type(10) h3 {
   display: flex;
   justify-content: center;
 }
@@ -510,7 +540,7 @@ nav a:hover {
     gap: 1em;
     width: 100%;
     display: flex;
-    padding-top: .5em;
+
     flex-direction: row;
   }
 
@@ -527,7 +557,7 @@ nav a:hover {
 /*PAGE 2!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /* over ons algemeen styling */
 .overons h2:first-of-type {
-  font-size: 1.75em;
+
   padding-top: 0.5em;
   padding-left: 0.5em;
 }
@@ -544,7 +574,9 @@ nav a:hover {
 .overons p {
   padding: 1em;
 }
-
+.overons h3{
+  font-size: 1.75em;
+}
 .overons section:last-of-type p {
   padding-bottom: 0.2em;
 }
@@ -593,9 +625,19 @@ nav a:hover {
 }
 
 /* section 2 over ons page*/
-.overons section:nth-of-type(2) h2 {
+.overons h3{
+  margin-top: 1em;
+  margin-left: 0.5em;
+}
+.overons section:first-of-type h2:first-of-type{
+  visibility: hidden;
+  position: absolute;
+  margin-top: -5em;
+}
+.overons section:nth-of-type(2) h3 {
   display: flex;
   justify-content: center;
+
 }
 
 .overons form label {
@@ -635,9 +677,15 @@ nav a:hover {
   border: 2px solid #d1d6dc;
 }
 
+.overons input:required{
+  background-color: rgb(195, 195, 195);
+}
+.overons input:invalid{
+  background-color: rgb(255, 185, 185);
+}
 /* met de placeholder zorg ik ervoor dat de kleur van de tekst hotpink is als er nog niks in ingetypt en de placeholder tekst actief is */
 .overons form input::placeholder {
-  color: rgb(186, 0, 0);
+  color: rgb(139, 114, 114);
 }
 
 /* over ons button styling */
@@ -693,7 +741,7 @@ section:last-of-type>form>input {
   display: flex;
   width: 30%;
  margin: auto;
- padding-top: 6em;
+ padding-top: 0.5em;
 }
 .succes section p{
   display: flex;
@@ -723,20 +771,30 @@ section:last-of-type>form>input {
   transform: skew(30deg);
   transition: transform 0.3s;
 }
+.succes h2{
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
 
+}
 /* footer */
 footer {
   padding-top: 0.5em;
   padding-bottom: 1.5em;
   background-color: black;
 }
-
-footer h2 {
+footer h2{
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 0.5em;
+}
+footer h3 {
   color: white;
   font-size: 1em;
 }
 
-footer h2 {
+footer h3 {
   padding-top: .5em;
 }
 
@@ -748,12 +806,13 @@ footer li {
 
 footer a {
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
 
 }
 
 footer a:hover {
   text-decoration: underline;
+  text-decoration-thickness: 0.2em;
 
 }
 
